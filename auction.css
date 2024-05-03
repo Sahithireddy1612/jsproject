@@ -580,7 +580,7 @@ right: 10px;
         color: #555;
     }
     }
-    @media screen and (min-width: 641px) and (max-width:3500px){
+    @media screen and (min-width: 641px) and (max-width:6000px){
 
         body{
             background-color: cadetblue;
