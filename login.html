@@ -69,12 +69,12 @@
                 const user = users.find(user => user.email === email && user.password === password);
 
                 if (user) {
-                    // Update user's data upon successful login
-                    user.lastLogin = new Date().toLocaleString(); // Example: Store login timestamp
+                    
+                    user.lastLogin = new Date().toLocaleString(); 
                     localStorage.setItem("users", JSON.stringify(users));
 
                     alert("Login Successful");
-                    window.location.href = "auctionafterlogin.html"; // Redirect to auctionafterlogin page
+                    window.location.href = "auctionafterlogin.html"; 
                 } else {
                     alert("Invalid email or password. Please try again.");
                 }
